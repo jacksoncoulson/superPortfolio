@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function showMessage(event) {
+            event.preventDefault(); 
+            alert("Your response has been submitted!");
+
+            document.getElementById("message").value = ""; // Clear the text area
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -81,6 +90,14 @@
 
 
      </div>
+
+     <h2>Connect with Me!</h2>
+    <form action="#">
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+
+
 
 </body>
 </html>
