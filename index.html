@@ -11,7 +11,7 @@
             event.preventDefault(); 
             alert("Your response has been submitted!");
 
-            document.getElementById("message").value = ""; // Clear the text area
+            document.getElementById("message").value = ""; 
         }
     </script>
 </head>
@@ -91,13 +91,15 @@
 
      </div>
 
-     <h2>Connect with Me!</h2>
-    <form action="#">
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="6" cols="50"></textarea><br><br>
-        <input type="submit" value="Submit">
+     <div>
+        <h2>Connect with Me!</h2>
+        <form action="#">
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="6" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
 
-
+     </div>
+     
 
 </body>
 </html>
